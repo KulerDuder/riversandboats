@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://xht0x0hodn6t"]
+
+[ext_resource type="Script" uid="uid://bdp8ysiprdncb" path="res://Scripts/main.gd" id="1_u27rj"]
+[ext_resource type="Script" uid="uid://biw5otftn0iav" path="res://Scripts/terrain_generator.gd" id="2_ouv0n"]
+
+[node name="Test1" type="Node3D" unique_id=1083487773]
+script = ExtResource("1_u27rj")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=641338411]
+script = ExtResource("2_ouv0n")
+map_seed = 94787
+cell_size = 3.0
+river_half_width = 4.2
+tree_count = null
+reed_count = null
+lily_count = null
+vegetation_seed = null
+horror_fish_count = null
+horror_fish_seed = null
+
+[node name="SpawnPoint" type="Marker3D" parent="Node3D" unique_id=567521787]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99, 0, -120)
+gizmo_extents = 4.48
